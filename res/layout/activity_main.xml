@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+	<SeekBar
+		android:id="@+id/seekbar"
+		android:layout_width="fill_parent"   
+		android:layout_height="wrap_content"   
+		android:layout_margin="10dp" />  
+		
+    <RelativeLayout
+        android:id="@+id/mouse_container"
+        android:layout_width="fill_parent"   
+		android:layout_height="wrap_content"  
+		android:layout_below="@id/seekbar">
+             
+        <com.remotecontrol.computercontroller.MousePad
+            android:id="@+id/mouse_pad"
+            android:layout_width="250dp"   
+			android:layout_height="250dp"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="20dp"
+			android:background="#ffff0000">
+        </com.remotecontrol.computercontroller.MousePad>
+        <RelativeLayout
+            android:id="@+id/mouse_buttons"
+            android:layout_width="wrap_content"   
+			android:layout_height="wrap_content"
+			android:layout_below="@id/mouse_pad"
+			android:layout_centerHorizontal="true">
+	     	<Button
+	     		android:id="@+id/left_click"
+	     		android:layout_height="wrap_content"
+	     		android:layout_width="wrap_content"
+	     		android:text="left click"/>
+	        <Button
+	            android:id="@+id/right_click"
+	     		android:layout_height="wrap_content"
+	     		android:layout_width="wrap_content"
+	     		android:text="right click"
+	     		android:layout_toRightOf="@id/left_click" />
+        </RelativeLayout>
+	</RelativeLayout>
+</RelativeLayout>

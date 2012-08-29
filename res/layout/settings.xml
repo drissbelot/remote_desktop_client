@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/current_port"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="URL for computer"/>
+    
+     <EditText android:id="@+id/edit_port"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/current_port"
+        android:hint="http://192.168.0.16:8080" />
+        
+    <Button
+        android:id="@+id/edit_port"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/current_port"
+        android:layout_toLeftOf="@id/edit_port"
+        android:text="set" />
+
+</RelativeLayout>
