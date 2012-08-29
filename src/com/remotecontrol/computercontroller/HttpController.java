@@ -26,7 +26,7 @@ public class HttpController {
 	 public void postNewVolume(String volumeValue) {
 
 	        httpclient = new DefaultHttpClient();
-	        HttpPost httppost = new HttpPost("http://192.168.0.16:8080/hello/volume_control/");
+	        HttpPost httppost = new HttpPost("http://18.212.1.24:8080/hello/volume_control/");
 	        
 	        try {
 	            // Add your data
