@@ -18,6 +18,7 @@ public class MainActivity extends Activity {
 
 	private SeekBar volumeSeekBar;
 	private Button rightClickButton;
+	
 	private Button leftClickButton;
 	private HttpController httpController;
 	private LinearLayout mousePad;
